@@ -16,7 +16,6 @@ webpackConfig = require('./webpack.config.js'),
 uglify        = require('gulp-uglify-es').default,
 
 replace       = require('gulp-replace'),
-htmlReplace   = require('gulp-html-replace'),
 rename        = require('gulp-rename'),
 browserSync   = require('browser-sync').create(),
 del           = require('del');
@@ -152,11 +151,18 @@ exports.setLinkStyles = setLinkStyles = () => {
     'assets/css/main.min.css'
     : 'assets/css/main.css';
 
+  if (!stateLinkStyles) {
+    return src('app/**/*.html')
+      .pipe(replace(/assets\/css\/main.min.css/g, function() {
+        return "assets/css/main.css";
+      }))
+      .pipe(dest('app/'));
+  }
+
   return src('app/**/*.html')
-    .pipe(htmlReplace({
-      'css': linkStyles,
-      'js' : [/*'assets/js/vendor.js', */'assets/js/app.js']
-    }, { keepUnassigned: true, keepBlockTags: true }))
+    .pipe(replace(/assets\/css\/main.css/g, function() {
+      return "assets/css/main.min.css";
+    }))
     .pipe(dest('app/'));
 }
 changeStateLinkStyles = (cb) => {
