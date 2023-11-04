@@ -9,7 +9,7 @@
 </ul>
 
 <h2>Начать</h2>
-<pre>git clone https://github.com/Shulhin/CSS-MachineX.git .; rm -rf .gitignore readme.md .git</pre>
+<pre>git clone https://github.com/Shulhin/CSS-MachineX2.git .; rm -rf .gitignore readme.md .git</pre>
 <p>Установить значение <strong>gmWatch = false</strong>, если не установлен в систему <strong>graphicsmagick</strong>.</p>
 <p>Переименовать файл ht.access в .htaccess</p>
 
@@ -27,7 +27,7 @@
 
 <h2>Структура проекта</h2>
 <p>
-	<img src="https://raw.githubusercontent.com/Shulhin/CSS-MachineX2/master/app/assets/img/architecture.jpg" alt="Структура проекта">
+	<img src="https://raw.githubusercontent.com/Shulhin/CSS-MachineX/master/app/assets/img/architecture.jpg" alt="Структура проекта">
 </p>
 
 <h3>Архитектура стилей <strong>src/sass</strong></h3>
