@@ -27,7 +27,7 @@
 
 <h2>Структура проекта</h2>
 <p>
-	<img src="https://raw.githubusercontent.com/Shulhin/CSS-MachineX/master/app/assets/img/architecture.jpg" alt="Структура проекта">
+	<img src="https://raw.githubusercontent.com/Shulhin/CSS-MachineX2/master/app/assets/img/architecture.jpg" alt="Структура проекта">
 </p>
 
 <h3>Архитектура стилей <strong>src/sass</strong></h3>
