@@ -45,6 +45,8 @@
 	<li><strong>gulp</strong> - запуск проекта.</li>
 	<li><strong>gulp speedDev</strong> - запуск проекта без автопрефикса, более шустрей работает, если очень много исходных файлов стилей.</li>
 	<li><strong>gulp build</strong> - финальная сборка проекта.</li>
+	<li><strong>npm run update</strong> - установка всех пакетов связанных с проектом.</li>
+	<li><strong>npm run clean</strong> - удаление папки node_modules.</li>
 </ul>
 
 <h2>Важно! Правила использования сборки в написании стилей</h2>
